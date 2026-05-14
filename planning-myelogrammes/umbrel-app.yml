@@ -12,8 +12,8 @@ description: >-
 developer: Gustave Roussy
 website: https://www.gustaveroussy.fr
 submitter: Gustave Roussy
-repo: https://github.com/asdggr/planning_soft
-support: https://github.com/asdggr/planning_soft/issues
+repo: https://github.com/asdggr/planning-myelogrammes
+support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
   Première installation distribuable via app store communautaire ;
