@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Planning des myélogrammes">
+  <rect width="128" height="128" rx="24" fill="#1f4f7a"/>
+  <rect x="24" y="26" width="80" height="76" rx="10" fill="#ffffff"/>
+  <path d="M24 42h80" stroke="#1f4f7a" stroke-width="6"/>
+  <path d="M42 20v18M86 20v18" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="46" cy="62" r="7" fill="#0f8f6f"/>
+  <circle cx="64" cy="62" r="7" fill="#d18b00"/>
+  <circle cx="82" cy="62" r="7" fill="#0f8f6f"/>
+  <circle cx="46" cy="82" r="7" fill="#0f8f6f"/>
+  <circle cx="64" cy="82" r="7" fill="#0f8f6f"/>
+  <circle cx="82" cy="82" r="7" fill="#b63737"/>
+</svg>
