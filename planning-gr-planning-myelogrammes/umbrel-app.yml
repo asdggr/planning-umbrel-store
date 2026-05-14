@@ -2,7 +2,7 @@ manifestVersion: 1
 id: planning-gr-planning-myelogrammes
 name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
-icon: icon.svg
+icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
 version: "0.1.0"
 port: 8524
