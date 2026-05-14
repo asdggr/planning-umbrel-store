@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: planning-myelogrammes_web_1
+      APP_HOST: planning-gr-planning-myelogrammes_web_1
       APP_PORT: 3000
 
   web:
