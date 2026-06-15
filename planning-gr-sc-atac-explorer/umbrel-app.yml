@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: planning-gr-sc-atac-explorer
+name: scATAC Explorer
+tagline: Explorateur scATAC-seq lymphocytes T (Shiny)
+icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-sc-atac-explorer/icon.svg
+category: files
+version: "1.0.0"
+port: 8538
+description: >-
+  Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
+  unique) : activité TF chromVAR, marqueurs par cluster/gène, pseudobulk par
+  lignage x condition, et pistes de navigation pré-rendues. Ne lit que des
+  bundles pré-calculés (pas d'ArchR au runtime). Données non publiées — garder
+  l'accès privé (Tailscale, partage de nœud + ACL au port).
+developer: Gustave Roussy
+website: https://www.gustaveroussy.fr
+submitter: Gustave Roussy
+repo: ""
+support: ""
+gallery: []
+releaseNotes: >-
+  Première version. Image chargée localement sur l'Umbrel (docker load) — aucune
+  donnée ne transite par un registry public.
+path: ""
+defaultUsername: ""
+defaultPassword: ""

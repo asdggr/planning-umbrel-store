@@ -1,0 +1,16 @@
+version: "3.7"
+
+# The image is loaded LOCALLY on the Umbrel (docker load via build_and_ship.sh) —
+# nothing is pulled from a public registry, so the unpublished data stays private.
+# Make sure `sc-atac-explorer:1.0.0` is loaded BEFORE installing this app; compose
+# uses the local image when present and does not pull it.
+services:
+  app_proxy:
+    environment:
+      APP_HOST: planning-gr-sc-atac-explorer_web_1
+      APP_PORT: 3838
+
+  web:
+    image: sc-atac-explorer:1.0.0
+    restart: on-failure
+    stop_grace_period: 1m
