@@ -16,8 +16,8 @@ description: >-
 developer: Gustave Roussy
 website: https://www.gustaveroussy.fr
 submitter: Gustave Roussy
-repo: ""
-support: ""
+repo: https://github.com/asdggr/planning-umbrel-store
+support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
   Première version. Image code-seul publique sur ghcr (aucune donnée embarquée) ;
