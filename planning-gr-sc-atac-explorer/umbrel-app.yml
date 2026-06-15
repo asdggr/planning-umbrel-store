@@ -10,8 +10,9 @@ description: >-
   Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
   unique) : activité TF chromVAR, marqueurs par cluster/gène, pseudobulk par
   lignage x condition, et pistes de navigation pré-rendues. Ne lit que des
-  bundles pré-calculés (pas d'ArchR au runtime). Données non publiées — garder
-  l'accès privé (Tailscale, partage de nœud + ACL au port).
+  bundles pré-calculés (pas d'ArchR au runtime). Image code-seul publique ; les
+  données non publiées sont montées depuis le volume privé de l'Umbrel.
+  Garder l'accès privé (Tailscale, partage de nœud + ACL au port).
 developer: Gustave Roussy
 website: https://www.gustaveroussy.fr
 submitter: Gustave Roussy
@@ -19,8 +20,8 @@ repo: ""
 support: ""
 gallery: []
 releaseNotes: >-
-  Première version. Image hébergée sur un package ghcr.io PRIVÉ (données non
-  publiées) — l'Umbrel doit être authentifié à ghcr pour la puller.
+  Première version. Image code-seul publique sur ghcr (aucune donnée embarquée) ;
+  les données sont montées depuis le volume de l'app sur l'Umbrel.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
