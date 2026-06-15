@@ -1,5 +1,3 @@
-version: "3.7"
-
 # Code-only PUBLIC image (R + shiny + the app, NO data) → Umbrel pulls it from
 # ghcr without any PAT. The unpublished data is mounted from the Umbrel app
 # volume at /data (see deploy/ship_data.sh) and never enters the registry.
