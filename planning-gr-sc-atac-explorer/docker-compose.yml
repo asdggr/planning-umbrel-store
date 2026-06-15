@@ -8,7 +8,7 @@ services:
       APP_PORT: 3838
 
   web:
-    image: ghcr.io/asdggr/sc-atac-explorer:1.0.0
+    image: ghcr.io/asdggr/sc-atac-explorer:1.0.1
     restart: on-failure
     environment:
       DATA_DIR: /data
