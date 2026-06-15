@@ -1,9 +1,8 @@
 version: "3.7"
 
-# The image is loaded LOCALLY on the Umbrel (docker load via build_and_ship.sh) —
-# nothing is pulled from a public registry, so the unpublished data stays private.
-# Make sure `sc-atac-explorer:1.0.0` is loaded BEFORE installing this app; compose
-# uses the local image when present and does not pull it.
+# Image hosted on a PRIVATE ghcr.io package (carries unpublished data — keep it
+# private). The Umbrel must be authenticated to ghcr to pull it (docker login
+# ghcr.io once on the host, same as the planning app).
 services:
   app_proxy:
     environment:
@@ -11,6 +10,6 @@ services:
       APP_PORT: 3838
 
   web:
-    image: sc-atac-explorer:1.0.0
+    image: ghcr.io/asdggr/sc-atac-explorer:1.0.0
     restart: on-failure
     stop_grace_period: 1m

@@ -19,8 +19,8 @@ repo: ""
 support: ""
 gallery: []
 releaseNotes: >-
-  Première version. Image chargée localement sur l'Umbrel (docker load) — aucune
-  donnée ne transite par un registry public.
+  Première version. Image hébergée sur un package ghcr.io PRIVÉ (données non
+  publiées) — l'Umbrel doit être authentifié à ghcr pour la puller.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
