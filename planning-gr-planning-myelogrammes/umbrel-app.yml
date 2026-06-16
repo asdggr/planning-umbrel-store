@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.7.0"
+version: "0.8.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,11 +16,9 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Nouveau tiroir Réglages (icône 🛠️) : bouton « Télécharger une sauvegarde »
-  (fichier complet sur votre ordinateur), date de dernière sauvegarde et
-  alerte quand elle devient ancienne (visible dès le header). La sauvegarde
-  inclut désormais TOUT (périodes validées/archivées comprises). Les règles
-  de planning y sont éditables, plus une section Infos & maintenance.
+  Thème sombre : activez-le depuis Réglages › Apparence. Toute l'interface
+  (calendrier, tiroirs, tableaux, badges, code couleur par unité) s'adapte
+  avec un contraste lisible. Le choix est mémorisé.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
