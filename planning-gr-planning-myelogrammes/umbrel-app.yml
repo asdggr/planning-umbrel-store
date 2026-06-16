@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.4.0"
+version: "0.4.1"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,13 +16,13 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Activation différée des plannings : un planning validé ne passe « en
-  cours » qu'à sa date de début. Vous pouvez préparer le planning suivant
-  à l'avance — il coexiste en « à venir » avec la période en cours et
-  démarre automatiquement le jour venu. L'équilibrage du nouveau planning
-  tient désormais compte du décompte théorique des périodes non archivées
-  (en plus de l'historique). Nouveau récap réel / théorique par personne.
-  Archivage automatique en fin de période.
+  Le calendrier « Période en cours » se centre automatiquement sur le
+  jour actuel à l'ouverture de l'onglet (jour mis en évidence). Inclut
+  aussi les nouveautés v0.4.0 : activation différée des plannings (un
+  planning validé ne passe « en cours » qu'à sa date de début, et vous
+  pouvez préparer le suivant à l'avance), équilibrage tenant compte du
+  décompte théorique des périodes non archivées, récap réel / théorique
+  par personne, et archivage automatique en fin de période.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
