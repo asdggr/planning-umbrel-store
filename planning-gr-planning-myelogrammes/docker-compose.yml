@@ -5,10 +5,12 @@ services:
       APP_PORT: 3000
 
   web:
-    image: ghcr.io/asdggr/planning-myelogrammes:v0.5.0
+    image: ghcr.io/asdggr/planning-myelogrammes:v0.6.0
     restart: on-failure
     environment:
       PORT: 3000
       DATA_DIR: /data
+      # Snapshots locaux horodatés conservés dans /data/backups/ (0 = désactivé).
+      BACKUP_KEEP: "30"
     volumes:
       - ${APP_DATA_DIR}/data:/data
