@@ -4,21 +4,25 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.1.1"
+version: "0.4.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
   centralisées dans le volume persistant Umbrel.
-developer: Gustave Roussy
-website: https://www.gustaveroussy.fr
-submitter: Gustave Roussy
+developer: Aurélien Sutra del Galy
+website: https://github.com/asdggr/planning-myelogrammes
+submitter: Aurélien Sutra del Galy
 repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Corrige l'affichage de l'icône (passage à une URL absolue HTTPS,
-  Umbrel ne résolvant pas les chemins relatifs). Aucun changement
-  applicatif, image v0.1.0 inchangée.
+  Activation différée des plannings : un planning validé ne passe « en
+  cours » qu'à sa date de début. Vous pouvez préparer le planning suivant
+  à l'avance — il coexiste en « à venir » avec la période en cours et
+  démarre automatiquement le jour venu. L'équilibrage du nouveau planning
+  tient désormais compte du décompte théorique des périodes non archivées
+  (en plus de l'historique). Nouveau récap réel / théorique par personne.
+  Archivage automatique en fin de période.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
