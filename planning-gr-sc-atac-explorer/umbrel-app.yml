@@ -4,7 +4,7 @@ name: scATAC Explorer
 tagline: Explorateur scATAC-seq lymphocytes T (Shiny)
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-sc-atac-explorer/icon.svg
 category: files
-version: "1.0.3"
+version: "1.0.4"
 port: 8538
 description: >-
   Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
@@ -20,10 +20,12 @@ repo: https://github.com/asdggr/planning-umbrel-store
 support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
-  1.0.3 — UMAP de référence (TF explorer) agrandies et légendes lisibles
-  (clusters sur 3 rangées) ; accès partagé via Cloudflare Access (login email).
-  1.0.2 — accès sans login Umbrel (PROXY_AUTH_ADD=false). 1.0.1 — 3 UMAP de
-  référence dans l'onglet TF explorer.
+  1.0.4 — favicon ; légendes UMAP en haut + labels clusters sur la carte ;
+  UMAP condition downsamplée pour l'affichage ; barplot composition étiqueté
+  (sans légende) ; Cluster explorer (2 UMAP côte à côte, profil chromVAR
+  agrandi) ; tracks de gènes avec enhancers T-cell (EnhancerAtlas) surlignés.
+  1.0.3 — UMAP de référence agrandies, légendes lisibles ; Cloudflare Access.
+  1.0.2 — accès sans login Umbrel. 1.0.1 — 3 UMAP de référence (TF explorer).
 path: ""
 defaultUsername: ""
 defaultPassword: ""
