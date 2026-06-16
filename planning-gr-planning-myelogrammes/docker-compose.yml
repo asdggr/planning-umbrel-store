@@ -5,7 +5,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: ghcr.io/asdggr/planning-myelogrammes:v0.4.1
+    image: ghcr.io/asdggr/planning-myelogrammes:v0.5.0
     restart: on-failure
     environment:
       PORT: 3000

@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.4.1"
+version: "0.5.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,13 +16,11 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Le calendrier « Période en cours » se centre automatiquement sur le
-  jour actuel à l'ouverture de l'onglet (jour mis en évidence). Inclut
-  aussi les nouveautés v0.4.0 : activation différée des plannings (un
-  planning validé ne passe « en cours » qu'à sa date de début, et vous
-  pouvez préparer le suivant à l'avance), équilibrage tenant compte du
-  décompte théorique des périodes non archivées, récap réel / théorique
-  par personne, et archivage automatique en fin de période.
+  Saisie des absences au calendrier : on choisit une personne, on marque
+  plusieurs périodes directement sur 3 mois affichés, puis on valide tout
+  d'un coup. Les absences déjà saisies apparaissent en rouge ; clic sur une
+  période en attente pour la corriger. Fini les champs de date manuels.
+  Le choix de la personne ne se réinitialise plus entre deux saisies.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
