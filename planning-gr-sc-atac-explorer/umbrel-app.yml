@@ -4,7 +4,7 @@ name: scATAC Explorer
 tagline: Explorateur scATAC-seq lymphocytes T (Shiny)
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-sc-atac-explorer/icon.svg
 category: files
-version: "1.0.2"
+version: "1.0.3"
 port: 8538
 description: >-
   Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
@@ -12,7 +12,7 @@ description: >-
   lignage x condition, et pistes de navigation pré-rendues. Ne lit que des
   bundles pré-calculés (pas d'ArchR au runtime). Image code-seul publique ; les
   données non publiées sont montées depuis le volume privé de l'Umbrel.
-  Garder l'accès privé (Tailscale, partage de nœud + ACL au port).
+  Garder l'accès privé (Cloudflare Access, login par email).
 developer: Gustave Roussy
 website: https://www.gustaveroussy.fr
 submitter: Gustave Roussy
@@ -20,9 +20,10 @@ repo: https://github.com/asdggr/planning-umbrel-store
 support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
-  1.0.2 — accès sans login Umbrel (PROXY_AUTH_ADD=false) : l'accès est protégé
-  par Tailscale (partage de nœud + ACL au port), pour le partage aux
-  collaborateurs. 1.0.1 — 3 UMAP de référence dans l'onglet TF explorer.
+  1.0.3 — UMAP de référence (TF explorer) agrandies et légendes lisibles
+  (clusters sur 3 rangées) ; accès partagé via Cloudflare Access (login email).
+  1.0.2 — accès sans login Umbrel (PROXY_AUTH_ADD=false). 1.0.1 — 3 UMAP de
+  référence dans l'onglet TF explorer.
 path: ""
 defaultUsername: ""
 defaultPassword: ""

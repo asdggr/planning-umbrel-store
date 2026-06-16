@@ -6,12 +6,12 @@ services:
     environment:
       APP_HOST: planning-gr-sc-atac-explorer_web_1
       APP_PORT: 3838
-      # No Umbrel login on this app: access is gated by Tailscale (tailnet
-      # membership + node share + port-scoped ACL), not an Umbrel account.
+      # No Umbrel login on this app: access is gated by Cloudflare Access
+      # (email allow-list) in front of a Cloudflare Tunnel, not an Umbrel account.
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/asdggr/sc-atac-explorer:1.0.1
+    image: ghcr.io/asdggr/sc-atac-explorer:1.0.3
     restart: on-failure
     environment:
       DATA_DIR: /data
