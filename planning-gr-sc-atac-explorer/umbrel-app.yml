@@ -4,7 +4,7 @@ name: scATAC Explorer
 tagline: Explorateur scATAC-seq lymphocytes T (Shiny)
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-sc-atac-explorer/icon.svg
 category: files
-version: "1.0.5"
+version: "1.0.6"
 port: 8538
 description: >-
   Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
@@ -20,9 +20,12 @@ repo: https://github.com/asdggr/planning-umbrel-store
 support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
+  1.0.6 — onglet « Gene tracks » : nouvelle vue « CD4 & CD8 » (les deux
+  lignages sur la même image, 6 pistes = lignage × condition) en plus de
+  merged / CD4 / CD8.
   1.0.5 — onglet « Gene tracks » refait en tracks Signac (CoveragePlot :
   couverture fine, échelle normalisée fixe partagée, violon gene-activity à
-  droite), 3 vues merged / CD4 / CD8, bandes enhancer EnhancerAtlas (cyan).
+  droite), 4 vues merged / CD4 / CD8 / both, bandes enhancer EnhancerAtlas (cyan).
   1.0.4 — favicon ; légendes UMAP en haut + labels clusters sur la carte ;
   UMAP condition downsamplée pour l'affichage ; barplot composition étiqueté
   (sans légende) ; Cluster explorer (2 UMAP côte à côte, profil chromVAR

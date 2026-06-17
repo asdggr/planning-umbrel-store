@@ -11,7 +11,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/asdggr/sc-atac-explorer:1.0.5
+    image: ghcr.io/asdggr/sc-atac-explorer:1.0.6
     restart: on-failure
     environment:
       DATA_DIR: /data
