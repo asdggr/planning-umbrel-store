@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.9.0"
+version: "0.10.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,11 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Génération plus intelligente : si un jour ne peut être attribué qu'en
-  laissant une unité sans personnel (collègues absents), l'app propose
-  désormais de lever la règle pour ces jours précis. La liste des absences
-  suit la personne sélectionnée. L'indicateur de sauvegarde reste visible
-  (neutre/alerte) et mène directement à la section Sauvegarde.
+  Rotations d'unité : on peut définir à l'avance les changements d'unité des
+  internes (ex. rotation de semestre le 03/08), et la génération d'un planning
+  sur plusieurs mois en tient compte automatiquement. Saisie dans la fiche de
+  chaque personne. L'onglet du navigateur affiche désormais l'icône de l'app.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
