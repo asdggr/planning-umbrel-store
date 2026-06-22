@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.11.0"
+version: "0.12.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,10 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Rotations d'unité simplifiées : la date d'une rotation se définit désormais
-  une seule fois pour toute la clinique (onglet Équipe › « Dates de rotation
-  d'unité »). Dans la fiche de chaque interne, il suffit de choisir sa nouvelle
-  unité à chacune de ces dates. La génération multi-mois en tient compte.
+  Export Excel revu : l'onglet récapitulatif affiche maintenant les jours
+  théoriques de fin de période en cours (le décompte utilisé pour équilibrer le
+  planning suivant), les en-têtes redeviennent lisibles, la grille est uniforme
+  et une légende explique les couleurs.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
