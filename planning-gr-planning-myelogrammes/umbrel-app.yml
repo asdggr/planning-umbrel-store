@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.12.0"
+version: "0.13.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,10 +16,11 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Export Excel revu : l'onglet récapitulatif affiche maintenant les jours
-  théoriques de fin de période en cours (le décompte utilisé pour équilibrer le
-  planning suivant), les en-têtes redeviennent lisibles, la grille est uniforme
-  et une légende explique les couleurs.
+  Rééquilibrage automatique après génération : les jours sont mieux répartis
+  entre les plus et les moins chargés, et l'app explique quand un écart est
+  incompressible (absences, etc.). Affichage de la présence de chacun (jours
+  présents / jours ouvrés). Correctif : la période d'un planning non validé est
+  conservée au redémarrage.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
