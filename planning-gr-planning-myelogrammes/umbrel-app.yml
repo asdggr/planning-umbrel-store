@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.14.0"
+version: "0.15.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,11 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Rééquilibrage plus malin : quand deux personnes ne peuvent pas s'échanger un
-  jour directement, l'app passe désormais par une troisième pour équilibrer tout
-  le monde. Le message d'équilibre est aussi plus clair : il nomme précisément
-  les personnes qui ne peuvent pas faire plus de jours (à cause de leurs
-  absences) au lieu d'annoncer un écart comme un échec global.
+  Nouveau réglage : la règle « ne pas dépouiller une unité » (ne jamais retirer
+  le dernier interne présent d'une unité quand ses collègues sont absents) peut
+  maintenant être désactivée depuis Réglages › Règles. Activée par défaut ;
+  décochez-la pour laisser la génération attribuer librement ces jours-là.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
