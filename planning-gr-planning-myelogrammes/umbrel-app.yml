@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.15.1"
+version: "0.15.2"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,10 +16,11 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Correction : la sauvegarde du planning au format .xlsx fonctionne désormais
-  même après avoir cliqué « Valider ce planning ». Auparavant le bouton
-  affichait « Aucun planning à sauvegarder » dès qu'on validait avant
-  d'exporter.
+  Le bouton « Sauvegarder (.xlsx) » permet maintenant de choisir quel planning
+  exporter quand plusieurs coexistent : planning en préparation, période en
+  cours, périodes à venir et périodes archivées (désormais exportables). Export
+  direct quand un seul planning est disponible. Fichier renommé
+  Planning_Myélo:BOM_<début>_<fin>.xlsx.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
