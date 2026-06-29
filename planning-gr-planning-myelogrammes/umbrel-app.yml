@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.15.0"
+version: "0.15.1"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,10 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Nouveau réglage : la règle « ne pas dépouiller une unité » (ne jamais retirer
-  le dernier interne présent d'une unité quand ses collègues sont absents) peut
-  maintenant être désactivée depuis Réglages › Règles. Activée par défaut ;
-  décochez-la pour laisser la génération attribuer librement ces jours-là.
+  Correction : la sauvegarde du planning au format .xlsx fonctionne désormais
+  même après avoir cliqué « Valider ce planning ». Auparavant le bouton
+  affichait « Aucun planning à sauvegarder » dès qu'on validait avant
+  d'exporter.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
