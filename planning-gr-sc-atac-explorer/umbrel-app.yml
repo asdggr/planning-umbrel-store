@@ -4,7 +4,7 @@ name: scATAC Explorer
 tagline: Explorateur scATAC-seq lymphocytes T (Shiny)
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-sc-atac-explorer/icon.svg
 category: files
-version: "1.0.9"
+version: "1.0.10"
 port: 8538
 description: >-
   Explorateur Shiny descriptif de l'analyse scATAC-seq lymphocytes T (donneur
@@ -20,6 +20,8 @@ repo: https://github.com/asdggr/planning-umbrel-store
 support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
+  1.0.10 — heatmaps pseudobulk (lignage × condition et par cluster)
+  hiérarchiquement clusterisées lignes + colonnes (Ward.D2) avec dendrogrammes.
   1.0.9 — heatmap « Pseudobulk (lignage × condition) » aussi row z-scorée par
   feature (TF comme gene-activity), cohérent avec l'onglet par cluster.
   1.0.8 — onglet « Pseudobulk (cluster) » : heatmap row z-scorée par feature
