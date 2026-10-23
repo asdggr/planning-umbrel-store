@@ -1,0 +1,30 @@
+# Ordonnancement de la veille — remplace les timers systemd veille@* depuis le
+# 23 octobre 2026. Chaque ligne est mot pour mot l'ancien `ExecStart` : une
+# tâche planifiée ne calcule rien, elle lance un script. La semaine ISO est
+# calculée par les scripts, qui posent eux-mêmes TZ=Europe/Paris.
+#
+# Fuseau : l'hôte est en UTC, et c'est le TZ du docker-compose.yml (règle
+# POSIX, CET/CEST) qui fait partir ces heures en heure de Paris. Le contrôler
+# par `sudo docker exec planning-gr-veille_cron_1 date` avant de s'y fier. Les
+# changements d'heure tombent à 2 h et 3 h, aucun créneau ci-dessous n'y touche.
+#
+# `-u hermes` : sans lui, la commande tourne en root et laisse des fichiers que
+# les passages suivants ne pourront plus écrire.
+#
+# `>> /proc/1/fd/1` : busybox crond jette la sortie des tâches. Redirigée vers
+# le processus 1, elle tombe dans `sudo docker logs planning-gr-veille_cron_1`,
+# qui remplace `journalctl -u veille@digest` comme trace des pannes.
+#
+# Ce que systemd faisait et que ceci ne fait pas : rattraper un créneau manqué
+# machine éteinte (Persistent=true — qui, en pratique, ne rattrapait déjà rien
+# puisque les horodatages disparaissaient avec /etc). Les trous se referment
+# d'eux-mêmes : la relève cherche sur dix jours, un digest du vendredi raté
+# part le lundi par digeres.txt. Seul vrai trou : un rapport mensuel manqué
+# attend le mois suivant.
+#
+# min heure jour mois jour-semaine (0 = dimanche)
+0 23 * * *   docker exec -u hermes hermes-agent_web_1 sh /opt/data/veille-skills/veille-inbox/scripts/nuit.sh >> /proc/1/fd/1 2>&1
+0 1  * * 1,5 docker exec -u hermes hermes-agent_web_1 sh /opt/data/veille-skills/veille-inbox/scripts/hebdo.sh >> /proc/1/fd/1 2>&1
+0 6  * * 1,5 docker exec -u hermes hermes-agent_web_1 sh /opt/data/veille-skills/veille-inbox/scripts/digest.sh >> /proc/1/fd/1 2>&1
+0 20 * * 0,3 docker exec -u hermes hermes-agent_web_1 sh /opt/data/veille-skills/veille-inbox/scripts/retours.sh >> /proc/1/fd/1 2>&1
+0 13 1 * *   docker exec -u hermes hermes-agent_web_1 sh /opt/data/veille-skills/veille-inbox/scripts/sota.sh >> /proc/1/fd/1 2>&1

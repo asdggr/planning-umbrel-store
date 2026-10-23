@@ -1,0 +1,24 @@
+# Scheduler for the Hermes literature watch. No UI, hence no app_proxy
+# (matter-server in the official store does the same).
+#
+# Why an app: umbrelOS's root is an overlay recreated at every boot, so
+# /etc/systemd/system and /var/spool/cron vanish on each power cut. umbreld
+# restarts installed apps at boot, and the app folder lives in app-data, which
+# persists.
+#
+# The host Docker socket is root on the host, knowingly: `docker exec` into
+# hermes-agent_web_1 needs it, exactly as the systemd units it replaces did.
+services:
+  cron:
+    image: docker:27.5.1-cli
+    restart: on-failure
+    environment:
+      # POSIX rule, not "Europe/Paris": the image is Alpine/musl without tzdata,
+      # where an unknown zone name silently falls back to UTC — i.e. "Monday
+      # 1 am" firing Sunday 11 pm, another ISO week, another folder (the S33
+      # failure). musl honours this rule with no zoneinfo at all.
+      TZ: CET-1CEST,M3.5.0,M10.5.0/3
+    command: ["crond", "-f", "-d", "5", "-c", "/etc/crontabs"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${APP_DATA_DIR}/crontabs:/etc/crontabs:ro

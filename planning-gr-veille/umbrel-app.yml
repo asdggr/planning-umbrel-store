@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: planning-gr-veille
+name: Veille — ordonnanceur
+tagline: Lance les cinq tâches de la veille bibliographique, coupure ou pas
+icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-veille/icon.svg
+category: files
+version: "1.0.0"
+port: 7243
+description: >-
+  Un crond (busybox) qui lance les scripts de la veille dans le conteneur
+  hermes-agent_web_1 par docker exec. Remplace les timers systemd, que la racine
+  éphémère d'umbrelOS effaçait à chaque redémarrage : une app, elle, est
+  relancée par umbreld au boot. Aucune interface — le bouton Ouvrir ne mène
+  nulle part. La crontab et son raisonnement sont dans crontabs/root.
+developer: Aurélien Sutra del Galy
+website: https://github.com/asdggr/planning-umbrel-store
+submitter: Aurélien Sutra del Galy
+repo: https://github.com/asdggr/planning-umbrel-store
+support: https://github.com/asdggr/planning-umbrel-store/issues
+gallery: []
+releaseNotes: >-
+  1.0.0 — remplace les timers systemd veille@*.
+path: ""
+defaultUsername: ""
+defaultPassword: ""
