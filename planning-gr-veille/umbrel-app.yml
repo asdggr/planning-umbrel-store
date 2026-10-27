@@ -4,7 +4,7 @@ name: Veille — ordonnanceur
 tagline: Lance les cinq tâches de la veille bibliographique, coupure ou pas
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-veille/icon.svg
 category: files
-version: "1.0.0"
+version: "1.0.1"
 port: 7243
 description: >-
   Un crond (busybox) qui lance les scripts de la veille dans le conteneur
@@ -19,7 +19,9 @@ repo: https://github.com/asdggr/planning-umbrel-store
 support: https://github.com/asdggr/planning-umbrel-store/issues
 gallery: []
 releaseNotes: >-
-  1.0.0 — remplace les timers systemd veille@*.
+  1.0.1 — la crontab est copiée en root au démarrage : busybox crond ignorait
+  en silence celle de 1.0.0, qui appartenait à umbrel, et aucune tâche n'a
+  tourné du 23 au 26 octobre 2026.
 path: ""
 defaultUsername: ""
 defaultPassword: ""

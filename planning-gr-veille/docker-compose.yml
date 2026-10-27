@@ -18,7 +18,15 @@ services:
       # 1 am" firing Sunday 11 pm, another ISO week, another folder (the S33
       # failure). musl honours this rule with no zoneinfo at all.
       TZ: CET-1CEST,M3.5.0,M10.5.0/3
-    command: ["crond", "-f", "-d", "5", "-c", "/etc/crontabs"]
+    # The crontab is copied in as root, never mounted straight into
+    # /etc/crontabs: busybox crond silently skips a crontab not owned by uid 0
+    # (crond.c, load_crontab: `sbuf.st_uid == DAEMON_UID`, no else, no log),
+    # and umbreld writes app-data as umbrel, uid 1000. 1.0.0 mounted it as is
+    # and ran with zero jobs from 23 to 26 October 2026, logging nothing but
+    # its wakeups. Check: `docker logs` must show one "user:root entry:" line
+    # per job at start — none means none will run. Being a copy, an edited
+    # crontabs/root takes effect only at the next app restart.
+    command: ["sh", "-c", "install -o 0 -g 0 -m 600 /crontabs/root /etc/crontabs/root && exec crond -f -d 5 -c /etc/crontabs"]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ${APP_DATA_DIR}/crontabs:/etc/crontabs:ro
+      - ${APP_DATA_DIR}/crontabs:/crontabs:ro
