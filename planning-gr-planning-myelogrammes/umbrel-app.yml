@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.17.0"
+version: "0.18.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,11 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Personnes novices : case « Novice » dans la fiche d'une personne ; un novice
-  n'a ni myélo ni BOM avant le lendemain de sa formation. Jours de formation
-  (Attributions Nominales) : date + 1 ou 2 personnes, le jour prend le créneau
-  myélo et ne compte pour personne. Au nouveau semestre, les novices formés
-  sont décochés automatiquement.
+  Export Excel refondu et plus lisible : légende, couleurs par unité, deux
+  lignes par semaine (dates puis personnes), impression A4 paysage. Les jours
+  de formation, jours fermés et fériés apparaissent désormais dans l'export, et
+  la BOM d'une semaine n'est plus perdue quand le lundi n'a pas de myélo.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
