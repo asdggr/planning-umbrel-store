@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.18.1"
+version: "0.19.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,9 +16,10 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Export Excel : les personnes qui ne font pas de BOM sont de nouveau en rouge
-  les jours de myélogramme (pas de BOM possible ce jour-là), et dans le
-  récapitulatif. Ligne « Noms » ajoutée à la légende.
+  Échanger un jour de formation dans la vue « Période en cours » : cliquer la
+  case Formation, puis un jour attribué, puis Échanger. La formation et la
+  personne permutent ; confirmation si la personne est absente ou si un novice
+  se retrouve attribué avant sa formation.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
