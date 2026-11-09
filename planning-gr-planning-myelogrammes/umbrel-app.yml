@@ -4,7 +4,7 @@ name: Planning des Myélogrammes
 tagline: Planification privée des myélogrammes
 icon: https://raw.githubusercontent.com/asdggr/planning-umbrel-store/master/planning-gr-planning-myelogrammes/icon.svg
 category: files
-version: "0.20.0"
+version: "0.21.0"
 port: 8524
 description: >-
   Application privée de planification des myélogrammes avec données
@@ -16,13 +16,11 @@ repo: https://github.com/asdggr/planning-myelogrammes
 support: https://github.com/asdggr/planning-myelogrammes/issues
 gallery: []
 releaseNotes: >-
-  Conflits signalés dans les plannings validés (absences, novices, jours
-  fermés, BOM) et confirmés avant tout échange ou remplacement ; remplaçants
-  proposés au double-clic, option « Annulé » ; BOM modifiable en cours de
-  période ; journal des modifications (aussi dans l'export) ; reprendre en
-  préparation un planning à venir ; Nouveau semestre qui demande qui reste ;
-  import d'absences avec aperçu ; restauration des sauvegardes serveur ;
-  équité BOM sur plusieurs plannings ; fenêtres lisibles en thème sombre.
+  Version diffusée : marquer un planning comme envoyé aux internes, puis voir
+  les changements depuis et copier un message prêt à envoyer. Colonne BOM dans
+  le décompte des jours et dans l'export. Absences « seulement le jeudi » (etc.)
+  sur une période. Sauvegardes serveur : la dernière de chaque jour est gardée
+  90 jours en plus des 30 dernières.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
